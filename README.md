@@ -26,5 +26,5 @@ This project fetches data from an API, identifies citations in the responses, an
 
 1. **Clone the repository:**
    ```sh
-   git clone 
+   git clone https://github.com/kaminiyuvaraju/citation-finder/tree/main
    cd citation_finder
