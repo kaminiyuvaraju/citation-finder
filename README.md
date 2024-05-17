@@ -26,5 +26,28 @@ This project fetches data from an API, identifies citations in the responses, an
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/kaminiyuvaraju/citation-finder/tree/main
+   git clone https://github.com/kaminiyuvaraju/citation-finder
    cd citation_finder
+
+### Create a virtual environment and activate it:
+
+- python3 -m venv venv
+- source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+### Install the dependencies:
+
+- pip install -r requirements.txt
+- Running the Application
+- Run the Flask application:
+
+- python app.py
+Open your web browser and navigate to http://127.0.0.1:5000/ to view the citations.
+
+### Project Structure
+citation_finder/
+├── app.py                # Main application file
+├── fetch_data.py         # Module to fetch data from the API
+├── find_citations.py     # Module to find citations in the fetched data
+├── requirements.txt      # List of dependencies
+├── templates/
+│   └── index.html        # HTML template for displaying citations
+└── README.md             # Project documentation
