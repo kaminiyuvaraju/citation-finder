@@ -43,11 +43,11 @@ This project fetches data from an API, identifies citations in the responses, an
 Open your web browser and navigate to http://127.0.0.1:5000/ to view the citations.
 
 ### Project Structure
-citation_finder/
-├── app.py                # Main application file
-├── fetch_data.py         # Module to fetch data from the API
-├── find_citations.py     # Module to find citations in the fetched data
-├── requirements.txt      # List of dependencies
-├── templates/
-│   └── index.html        # HTML template for displaying citations
-└── README.md             # Project documentation
+-citation_finder/
+- ├── app.py                # Main application file
+- ├── fetch_data.py         # Module to fetch data from the API
+- ├── find_citations.py     # Module to find citations in the fetched data
+- ├── requirements.txt      # List of dependencies
+- ├── templates/
+- │   └── index.html        # HTML template for displaying citations
+- └── README.md             # Project documentation
