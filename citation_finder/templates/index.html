@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citation Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Citation Finder</h1>
+    <div class="results">
+        {% for citations in results %}
+            <div class="citation-block">
+                {% if citations %}
+                    <h2>Citations</h2>
+                    <ul>
+                        {% for citation in citations %}
+                            <li>ID: {{ citation.id }} - 
+                            <a href="{{ citation.link }}" target="_blank">{{ citation.link }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>No citations found.</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
